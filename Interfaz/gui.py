@@ -9,10 +9,14 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Ventana(object):
+class Ui_Ventana(QtWidgets.QWidget):
+    def __init__(self):
+        self.setObjectName("Draw")
+        self.resize(1200, 1050)
+
+
     def setupUi(self, Ventana):
         Ventana.setObjectName("Ventana")
-        Ventana.resize(1200, 1050)
         self.frame = QtWidgets.QFrame(Ventana)
         self.frame.setGeometry(QtCore.QRect(190, 20, 1000, 1000))
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)

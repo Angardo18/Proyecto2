@@ -1,14 +1,6 @@
-from PyQt5.QtWidgets import QApplication, QWidget
-import os
-import sys
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-
-    w = QWidget()
-    w.resize(500, 300)
-    w.move(0, 0)
-    w.setWindowTitle('Hola, Mundo')
-    w.show()
-
-    sys.exit(app.exec_())
+from gui    import Ui_Ventana
+from PyQt5 import QtWidgets
+class VentanaPrincipal (QtWidgets.QWidget,Ui_Ventana):
+    def __init__(self):
+        super.__init__()
+        self.setupUi(self)
