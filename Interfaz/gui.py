@@ -49,8 +49,6 @@ class Ui_Ventana(object):
         self.lblConectar.setText(_translate("Ventana", "nombre del puerto:"))
 
 
-
-
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
