@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c041f5-f034-494d-a5fc-282054764eff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interfaz.pyw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prueba hilos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/puertoSerial.py" beforeDir="false" afterPath="$PROJECT_DIR$/puertoSerial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaz.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/interfaz.pyw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.err" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.err" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.o" afterDir="false" />
@@ -15,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/main.asm" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/main.asm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-genesis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-genesis.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/configurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/configurations.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interfaz.pyw">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+            <state relative-caret-position="153">
+              <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -48,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/puertoSerial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            <state relative-caret-position="418">
+              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -89,7 +87,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,6 +98,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +246,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
@@ -313,16 +311,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaz.py" />
-    <entry file="file://$PROJECT_DIR$/interfaz.pyw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -332,8 +320,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/puertoSerial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="418">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaz.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

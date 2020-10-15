@@ -7,9 +7,10 @@ import time
 from PyQt5.QtCore import Qt
 from serial import Serial
 
+
 class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
     def __init__(self):
-        super().__init__() #se inicializa el constructor de las clases padre
+        super().__init__() # se inicializa el constructor de las clases padre
         self.setupUi(self)
         self.estaDibujando = False
 
@@ -29,9 +30,14 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
         self.btnDibujar.clicked.connect(self.obtenerDatos)
         self.btnBorrar.clicked.connect(self.borrar)
         self.btnDetener.clicked.connect(self.detener)
+
     def detener(self):
         global  bandera
         bandera = False
+
+    def exportar(self):
+        mapa = self.lblPaint.pixmap()
+        imagen = self.lblPaint.pixmap().toImage()
 
     def obtenerDatos(self):
         global bandera
@@ -46,34 +52,30 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
 
             except:
                 pass
-    def paint(self,x,y):
+
+    def paint(self, x, y):
         try:
-            if not self.mapa is None:
-               # self.bloquear.acquire() #se bloquea para que solo 1 hilo entre a la vez
+            if  self.mapa is not None:
+                # self.bloquear.acquire() #se bloquea para que solo 1 hilo entre a la vez
                 self.estaDibujando = True # se indica que se esta habilitando
 
                 self.painter.drawPoint(x, y)
                 self.update()
-                self.estaDibujando = False #se indica que no se esta dibujanto
-                #self.bloquear.release() #se libera
+                self.estaDibujando = False # se indica que no se esta dibujanto
+                # self.bloquear.release() #se libera
         except:
             print("error")
 
         # print("se esta pintando")
     def borrar(self):
         global bandera
-        flag = True # bandera usada para mantener en el bucle
+        flag = True  # bandera usada para mantener en el bucle
 
         while flag:
             if not self.estaDibujando:
                 try:
-                    #self.bloquear.acquire()
-                    #self.mapa = QPixmap(950, 750)
-                    #self.mapa.fill(QColor('#ffffff'))  # Fill entire canvas.
-                    #self.lblPaint.setPixmap(self.mapa)
                     flag = False
                     self.painter.eraseRect(0,0,950,750)
-                    self.lblPaint.pixmap()
                     self.update()
                     print("dibujando")
                     #self.bloquear.release()
@@ -85,26 +87,47 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
     def iniciarConexion(self):
         global  pic
         try:
-            pic = Serial(port=self.txtConectar.text(), baudrate=10417, writeTimeout=0)
+            pic = Serial(port=self.txtConectar.text(), baudrate=9615, writeTimeout=0)
             pic.flushInput()
+            pic.flushOutput()
             hiloDatos = threading.Thread(name="lectura", target=obtenerDatos, daemon=True)
             hiloDatos.start()
         except:
             print("error al conectar, nombre no reconocido")
 
-#Funcion que se ejecutara en segundo plano
+# Funcion que se ejecutara en segundo plano
+
+
 def obtenerDatos():
-    global pic,potx,poty
+    global pic, potx, poty, x, y
 
     while 1:
-        try:
-            lectura = pic.readline().decode("ascii") # deberia venir un string en formato x,y \n
-            pic.flushInput()
-            time.sleep(0.001)
-            lista = lectura.split(",")
-            print(lectura)
-        except:
-            lista = []
+        #try:
+        lectura = pic.readline().decode("ascii")# deberia venir un string en formato x,y \n
+        pic.flushInput()
+
+        lista = lectura.split(",")
+
+        stringx = str(x)
+        stringy = str(y)
+
+        # esto es para que se verifique que los numeros enviados siempre tengan 3 caracteres
+        if len(stringx) == 1:
+            stringx = "00" +stringx
+        elif len(stringx) == 2:
+            stringx = "0" + stringx
+        if len(stringy) == 1:
+            stringy = "00" + stringy
+        elif len(stringy) == 2:
+            stringy = "0" +stringy
+
+        print((stringx+","+stringy).encode("ascii"))
+        pic.write((stringx+","+stringy+chr(0)).encode("ascii"))
+
+        print(lectura)
+        #except:
+        #lista = []
+         #   print("Erroue")
         if len(lista) == 2: # si no es 2 hubo una lectura erronea
             # se colocan mas filtros de forma que los unicos datos que se reciben son los que cumplen los
             # formatos de envio, es decir un numero de 3 cifras para  x, un numero de 4 cifras para y, y salto
@@ -121,6 +144,7 @@ def obtenerDatos():
                 poty = poty
 
             #print(potx,poty)
+
 
 def moverX():
     global x, potx,  bandera
@@ -142,6 +166,7 @@ def moverX():
                 ventana.paint(x, y)
         except:
             print("error en moverx")
+
 
 def moverY():
     global y, poty, bandera
