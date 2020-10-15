@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c041f5-f034-494d-a5fc-282054764eff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/puertoSerial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaz.pyw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prueba hilos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaz.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/puertoSerial.py" beforeDir="false" afterPath="$PROJECT_DIR$/puertoSerial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.err" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.err" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.cof" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.cof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/main.asm" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/main.asm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-genesis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-genesis.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/configurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/configurations.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaz.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interfaz.pyw">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-141">
-              <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+            <state relative-caret-position="265">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -29,20 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/puertoSerial.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui.py">
+        <entry file="file://$PROJECT_DIR$/puertoSerial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="510">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -64,12 +71,14 @@
       <list>
         <option value="$PROJECT_DIR$/aprendiendo.py" />
         <option value="$PROJECT_DIR$/gui.py" />
-        <option value="$PROJECT_DIR$/puertoSerial.py" />
+        <option value="$PROJECT_DIR$/prueba hilos.py" />
         <option value="$PROJECT_DIR$/interfaz.py" />
+        <option value="$PROJECT_DIR$/puertoSerial.py" />
+        <option value="$PROJECT_DIR$/interfaz.pyw" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -80,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,7 +101,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.interfaz">
+  <component name="RunManager" selected="Python.interfaz.pyw">
     <configuration name="aprendiendo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interfaz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,27 +140,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Interfaz" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="interfaz" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interfaz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,6 +153,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interfaz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="interfaz.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Interfaz" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interfaz.pyw" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prueba hilos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Interfaz" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prueba hilos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,10 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.interfaz" />
+        <item itemvalue="Python.interfaz.pyw" />
         <item itemvalue="Python.puertoSerial" />
+        <item itemvalue="Python.interfaz" />
+        <item itemvalue="Python.prueba hilos" />
         <item itemvalue="Python.aprendiendo" />
-        <item itemvalue="Python.gui" />
       </list>
     </recent_temporary>
   </component>
@@ -218,14 +249,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24362606" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24362606" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -269,37 +301,39 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aprendiendo.py">
+    <entry file="file://$PROJECT_DIR$/aprendiendo.py" />
+    <entry file="file://$PROJECT_DIR$/prueba hilos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui.py">
+    <entry file="file://$PROJECT_DIR$/interfaz.py" />
+    <entry file="file://$PROJECT_DIR$/interfaz.pyw">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state relative-caret-position="265">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/puertoSerial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="510">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
         </state>
       </provider>
     </entry>

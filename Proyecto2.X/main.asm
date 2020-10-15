@@ -237,20 +237,29 @@ LOOP:
     CALL    CONVERTIR_BIN_TO_BCD
     MOVF    VALOR_CENTENAS,W
     MOVWF  PIXEL_X_HIGH
+    MOVWF   X_HIGH
     MOVF    VALOR_DECENAS,W
     MOVWF   PIXEL_X_MID
+    MOVWF   X_MID
     MOVF    VALOR_UNIDADES,W
     MOVWF   PIXEL_X_LOW
+    MOVWF   X_LOW
     
     MOVF    ADC_C1,W
     MOVWF   VALOR_BIN
     CALL    CONVERTIR_BIN_TO_BCD
     MOVF    VALOR_CENTENAS,W
     MOVWF  PIXEL_Y_HIGH
+    MOVWF   Y_HIGH
     MOVF    VALOR_DECENAS,W
     MOVWF   PIXEL_Y_MID
+    MOVWF   Y_MID
     MOVF    VALOR_UNIDADES,W
     MOVWF   PIXEL_Y_LOW
+    MOVWF   Y_LOW
+    
+    CALL ENVIAR_DATOS
+    
     GOTO LOOP
 
     
@@ -262,19 +271,67 @@ ENVIAR_DATOS:
     MOVF    CONTADOR,W
     ADDWF   PCL,F
     GOTO    UNO
-;    GOTO    DOS
-;    GOTO    TRES
-;    GOTO    CUATRO
-;    GOTO    CINCO
-;    GOTO    SEIS
-;    GOTO    SIETE
-;    GOTO    OCHO
-;    
+    GOTO    DOS
+    GOTO    TRES
+    GOTO    CUATRO
+    GOTO    CINCO
+    GOTO    SEIS
+    GOTO    SIETE
+    GOTO    OCHO
+    CLRF    CONTADOR
     UNO
     MOVF    X_HIGH,W
     ADDLW   .48 ;SE PASA DE BCD A ASCII
     MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
     
+    DOS
+     MOVF    X_MID,W
+    ADDLW   .48 ;SE PASA DE BCD A ASCII
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
+    
+    TRES
+    MOVF    X_LOW,W
+    ADDLW   .48 ;SE PASA DE BCD A ASCII
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
+    
+    CUATRO
+    MOVLW    .44 ; COMA EN ASCII
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
+    
+    CINCO
+     MOVF    Y_HIGH,W
+    ADDLW   .48 ;SE PASA DE BCD A ASCII
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
+    
+    SEIS
+    MOVF    Y_MID,W
+    ADDLW   .48 ;SE PASA DE BCD A ASCII
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
+    
+    SIETE
+     MOVF    Y_LOW,W
+    ADDLW   .48 ;SE PASA DE BCD A ASCII
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN
+    
+    OCHO
+    MOVLW   .10 ;NUEVA LINEA
+    MOVWF   TXREG
+    INCF    CONTADOR,F
+    RETURN  
     
     
     
