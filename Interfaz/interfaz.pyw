@@ -90,6 +90,9 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
             pic = Serial(port=self.txtConectar.text(), baudrate=9615, writeTimeout=0)
             pic.flushInput()
             pic.flushOutput()
+            mantener = True #esta bandera se usa para mantener dentro de un bucle, hasta que se detecte que se estan
+            #recibiendo bien los datos
+
             hiloDatos = threading.Thread(name="lectura", target=obtenerDatos, daemon=True)
             hiloDatos.start()
         except:
@@ -100,11 +103,15 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
 
 def obtenerDatos():
     global pic, potx, poty, x, y
-
+    pic.flushOutput()
     while 1:
         #try:
-        lectura = pic.readline().decode("ascii")# deberia venir un string en formato x,y \n
+
+        leer = pic.readline()
+        print(leer)
+        lectura = leer.decode("ascii")# deberia venir un string en formato x,y \n
         pic.flushInput()
+        print(leer)
 
         lista = lectura.split(",")
 
@@ -183,7 +190,7 @@ def moverY():
                 y = y - 1
                 if y == -1:
                     y = 750
-                delay = (-9/10000) * (poty - 155) +0.1
+                delay = (-9/10000) * (poty - 155) + 0.1
                 time.sleep(delay)
                 ventana.paint(x, y)
             #print("y")
