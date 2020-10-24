@@ -1,14 +1,14 @@
 from gui    import Ui_Ventana
 from PyQt5 import QtWidgets
-from PyQt5.QtGui import QPainter, QBrush, QPen, QPixmap,QColor
-from  puertoSerial import *
+from PyQt5.QtGui import QPainter, QPen, QPixmap, QColor
+from puertoSerial import *
 import threading
 import time
 from PyQt5.QtCore import Qt
 from serial import Serial
 
 
-class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
+class VentanaPrincipal (QtWidgets.QMainWindow, Ui_Ventana):
     def __init__(self):
         super().__init__() # se inicializa el constructor de las clases padre
         self.setupUi(self)
@@ -47,6 +47,7 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
                 hiloMod2 = threading.Thread(target=moverY, daemon=True)
 
                 bandera = True
+
                 hiloMod1.start()
                 hiloMod2.start()
 
@@ -55,14 +56,14 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
 
     def paint(self, x, y):
         try:
-            if  self.mapa is not None:
-                # self.bloquear.acquire() #se bloquea para que solo 1 hilo entre a la vez
-                self.estaDibujando = True # se indica que se esta habilitando
 
-                self.painter.drawPoint(x, y)
-                self.update()
-                self.estaDibujando = False # se indica que no se esta dibujanto
-                # self.bloquear.release() #se libera
+         # self.bloquear.acquire() #se bloquea para que solo 1 hilo entre a la vez
+            self.estaDibujando = True # se indica que se esta habilitando
+
+            self.painter.drawPoint(x,y)
+            self.update()
+            self.estaDibujando = False # se indica que no se esta dibujanto
+            # self.bloquear.release() #se libera
         except:
             print("error")
 
@@ -81,8 +82,6 @@ class VentanaPrincipal (QtWidgets.QMainWindow,Ui_Ventana):
                     #self.bloquear.release()
                 except :
                     print("error fatal")
-
-
 
     def iniciarConexion(self):
         global  pic
