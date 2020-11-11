@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c041f5-f034-494d-a5fc-282054764eff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hilos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/muestra.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interfaz.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/interfaz.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/muestra.py" beforeDir="false" afterPath="$PROJECT_DIR$/muestra.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/puertoSerial.py" beforeDir="false" afterPath="$PROJECT_DIR$/puertoSerial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.err" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.err" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/build/default/production/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.cof" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.cof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/dist/default/production/Proyecto2.X.production.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/main.asm" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/main.asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-default.mk" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-default.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-genesis.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/Makefile-genesis.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/configurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/configurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto2.X/nbproject/private/configurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto2.X/nbproject/private/configurations.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interfaz.pyw">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            <state relative-caret-position="556">
+              <caret line="214" column="16" lean-forward="true" selection-end-line="214" selection-end-column="16" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -29,27 +39,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hilos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/muestra.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="403">
+              <caret line="50" lean-forward="true" selection-start-column="1" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -57,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/puertoSerial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="153">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -82,9 +75,9 @@
         <option value="$PROJECT_DIR$/gui.py" />
         <option value="$PROJECT_DIR$/prueba hilos.py" />
         <option value="$PROJECT_DIR$/interfaz.py" />
-        <option value="$PROJECT_DIR$/muestra.py" />
-        <option value="$PROJECT_DIR$/puertoSerial.py" />
         <option value="$PROJECT_DIR$/hilos.py" />
+        <option value="$PROJECT_DIR$/puertoSerial.py" />
+        <option value="$PROJECT_DIR$/muestra.py" />
         <option value="$PROJECT_DIR$/interfaz.pyw" />
       </list>
     </option>
@@ -100,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,6 +104,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hilos">
+  <component name="RunManager" selected="Python.interfaz.pyw">
     <configuration name="hilos" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interfaz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,7 +186,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prueba hilos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="muestra" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interfaz" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,7 +198,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prueba hilos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/muestra.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hilos" />
         <item itemvalue="Python.interfaz.pyw" />
+        <item itemvalue="Python.muestra" />
+        <item itemvalue="Python.hilos" />
         <item itemvalue="Python.puertoSerial" />
         <item itemvalue="Python.interfaz" />
-        <item itemvalue="Python.prueba hilos" />
       </list>
     </recent_temporary>
   </component>
@@ -261,12 +254,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122934565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04249292" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1713881" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -323,37 +316,37 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaz.py" />
-    <entry file="file://$PROJECT_DIR$/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/puertoSerial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/muestra.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/hilos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="238">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/muestra.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/puertoSerial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="50" lean-forward="true" selection-start-column="1" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interfaz.pyw">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        <state relative-caret-position="556">
+          <caret line="214" column="16" lean-forward="true" selection-end-line="214" selection-end-column="16" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

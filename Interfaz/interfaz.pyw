@@ -1,7 +1,6 @@
 from gui    import Ui_Ventana
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QPainter, QPen, QPixmap, QColor
-from puertoSerial import *
 import threading
 import time
 from PyQt5.QtCore import Qt
@@ -119,7 +118,7 @@ def obtenerDatos():
 
         # esto es para que se verifique que los numeros enviados siempre tengan 3 caracteres
         if len(stringx) == 1:
-            stringx = "00" +stringx
+            stringx = "00" + stringx
         elif len(stringx) == 2:
             stringx = "0" + stringx
         if len(stringy) == 1:
@@ -141,13 +140,13 @@ def obtenerDatos():
                 if len(lista[0]) == 3 and int(lista[0])<=255 :
                     potx = int(lista[0])
             except:
-                potx = potx
+                pass
                 #print(potx, poty)
             try:
                 if len(lista[1]) == 4 and int(lista[1]) <= 255:
                     poty = int(lista[1])
             except:
-                poty = poty
+                pass
 
             #print(potx,poty)
 
@@ -213,4 +212,4 @@ aplication.exec_()
 print(x,y)
 if not pic is None:
     pic.close()
-    print("ta")
+    #print("ta")
